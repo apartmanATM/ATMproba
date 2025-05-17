@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerija | Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f9f7f4, #eae5df);
+      color: #333;
+    }
+
+    header {
+      background-color: #d8cfc4;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0.5rem 1rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #3a312a;
+      font-weight: bold;
+    }
+
+    .galerija-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    .galerija-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #d8cfc4;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="pocetna.html">Početna / Home</a></li>
+        <a href="https://maps.app.goo.gl/p7wP6CyKmTALyRhs9?g_st=av">Lokacija/Location</a>
+        <li><a href="kontakt.html">Kontakt / Contact</a></li>
+        <li><a href="galerija.html">Galerija / Gallery</a></li>
+        <li><a href="cenovnik.html">Cenovnik / Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 style="text-align:center; margin-top:2rem;">Galerija Slika / Image Gallery</h1>
+    <section class="galerija-container">
+      <!-- Ubaci putanje do svojih slika ispod -->
+      <img src="slika3.jpg" alt="Stan slika 1">
+      <img src="slika4.jpg" alt="Stan slika 2">
+      <img src="slika5.jpg" alt="Stan slika 3">
+      <img src="slika6.jpg" alt="Stan slika 4">
+      <img src="slika8.jpg" alt="Stan slika 5">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Izdavanje Stana | Apartment Rental</p>
+    <p>&copy; Site by zeka</p>
+  </footer>
+</body>
+</html>
